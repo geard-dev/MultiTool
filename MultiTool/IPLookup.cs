@@ -16,5 +16,10 @@ namespace MultiTool
         {
             InitializeComponent();
         }
+
+        private void searchIPButton_Click(object sender, EventArgs e)
+        {
+            string inputIPaddress = ipTextbox.Text;
+        }
     }
 }
