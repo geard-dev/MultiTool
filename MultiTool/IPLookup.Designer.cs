@@ -32,6 +32,8 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.ipTextbox = new System.Windows.Forms.TextBox();
             this.searchIPButton = new System.Windows.Forms.Button();
+            this.responceTextBox = new System.Windows.Forms.RichTextBox();
+            this.textBoxLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // returnBtn
@@ -43,6 +45,7 @@
             this.returnBtn.TabIndex = 0;
             this.returnBtn.Text = "< Return to Panel";
             this.returnBtn.UseVisualStyleBackColor = true;
+            this.returnBtn.Click += new System.EventHandler(this.returnBtn_Click);
             // 
             // titleLabel
             // 
@@ -55,7 +58,7 @@
             // 
             // ipTextbox
             // 
-            this.ipTextbox.Location = new System.Drawing.Point(387, 80);
+            this.ipTextbox.Location = new System.Drawing.Point(387, 180);
             this.ipTextbox.Name = "ipTextbox";
             this.ipTextbox.Size = new System.Drawing.Size(239, 31);
             this.ipTextbox.TabIndex = 2;
@@ -63,7 +66,7 @@
             // searchIPButton
             // 
             this.searchIPButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.searchIPButton.Location = new System.Drawing.Point(455, 140);
+            this.searchIPButton.Location = new System.Drawing.Point(455, 240);
             this.searchIPButton.Name = "searchIPButton";
             this.searchIPButton.Size = new System.Drawing.Size(106, 41);
             this.searchIPButton.TabIndex = 3;
@@ -71,12 +74,32 @@
             this.searchIPButton.UseVisualStyleBackColor = true;
             this.searchIPButton.Click += new System.EventHandler(this.searchIPButton_Click);
             // 
+            // responceTextBox
+            // 
+            this.responceTextBox.Location = new System.Drawing.Point(664, 28);
+            this.responceTextBox.Name = "responceTextBox";
+            this.responceTextBox.ReadOnly = true;
+            this.responceTextBox.Size = new System.Drawing.Size(339, 516);
+            this.responceTextBox.TabIndex = 4;
+            this.responceTextBox.Text = "Results will show up here...";
+            // 
+            // textBoxLabel
+            // 
+            this.textBoxLabel.AutoSize = true;
+            this.textBoxLabel.Location = new System.Drawing.Point(391, 152);
+            this.textBoxLabel.Name = "textBoxLabel";
+            this.textBoxLabel.Size = new System.Drawing.Size(116, 25);
+            this.textBoxLabel.TabIndex = 5;
+            this.textBoxLabel.Text = "IP Address";
+            // 
             // IPLookup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1037, 579);
+            this.Controls.Add(this.textBoxLabel);
+            this.Controls.Add(this.responceTextBox);
             this.Controls.Add(this.searchIPButton);
             this.Controls.Add(this.ipTextbox);
             this.Controls.Add(this.titleLabel);
@@ -95,5 +118,7 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.TextBox ipTextbox;
         private System.Windows.Forms.Button searchIPButton;
+        private System.Windows.Forms.RichTextBox responceTextBox;
+        private System.Windows.Forms.Label textBoxLabel;
     }
 }

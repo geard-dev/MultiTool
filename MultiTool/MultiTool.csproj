@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MemoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryEdit.Designer.cs">
+      <DependentUpon>MemoryEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="IPLookup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryEdit.resx">
+      <DependentUpon>MemoryEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel.resx">
       <DependentUpon>Panel.cs</DependentUpon>

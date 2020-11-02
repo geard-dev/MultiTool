@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Memory;
 
 namespace MultiTool
 {
@@ -19,12 +20,18 @@ namespace MultiTool
 
         private void editMemory_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            MemoryEdit memEdit = new MemoryEdit();
+            memEdit.Show();
         }
 
         private void lookupIP_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+
+            IPLookup ipLookup = new IPLookup();
+            ipLookup.Show();
         }
 
         private void runPowershell_Click(object sender, EventArgs e)
