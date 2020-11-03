@@ -32,6 +32,8 @@
             this.lookupIP = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.runPowershell = new System.Windows.Forms.Button();
+            this.lookupPhone = new System.Windows.Forms.Button();
+            this.wipFauxButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // editMemory
@@ -74,12 +76,33 @@
             this.runPowershell.UseVisualStyleBackColor = true;
             this.runPowershell.Click += new System.EventHandler(this.runPowershell_Click);
             // 
+            // lookupPhone
+            // 
+            this.lookupPhone.Location = new System.Drawing.Point(70, 143);
+            this.lookupPhone.Name = "lookupPhone";
+            this.lookupPhone.Size = new System.Drawing.Size(167, 43);
+            this.lookupPhone.TabIndex = 6;
+            this.lookupPhone.Text = "Phone Lookup";
+            this.lookupPhone.UseVisualStyleBackColor = true;
+            this.lookupPhone.Click += new System.EventHandler(this.lookupPhone_Click);
+            // 
+            // wipFauxButton
+            // 
+            this.wipFauxButton.Location = new System.Drawing.Point(302, 143);
+            this.wipFauxButton.Name = "wipFauxButton";
+            this.wipFauxButton.Size = new System.Drawing.Size(403, 43);
+            this.wipFauxButton.TabIndex = 7;
+            this.wipFauxButton.Text = "Work in Progress";
+            this.wipFauxButton.UseVisualStyleBackColor = true;
+            // 
             // Panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(800, 176);
+            this.ClientSize = new System.Drawing.Size(800, 234);
+            this.Controls.Add(this.wipFauxButton);
+            this.Controls.Add(this.lookupPhone);
             this.Controls.Add(this.runPowershell);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lookupIP);
@@ -97,5 +120,7 @@
         private System.Windows.Forms.Button lookupIP;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button runPowershell;
+        private System.Windows.Forms.Button lookupPhone;
+        private System.Windows.Forms.Button wipFauxButton;
     }
 }

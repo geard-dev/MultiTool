@@ -58,7 +58,7 @@
             // 
             // ipTextbox
             // 
-            this.ipTextbox.Location = new System.Drawing.Point(387, 180);
+            this.ipTextbox.Location = new System.Drawing.Point(219, 164);
             this.ipTextbox.Name = "ipTextbox";
             this.ipTextbox.Size = new System.Drawing.Size(239, 31);
             this.ipTextbox.TabIndex = 2;
@@ -66,7 +66,7 @@
             // searchIPButton
             // 
             this.searchIPButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.searchIPButton.Location = new System.Drawing.Point(455, 240);
+            this.searchIPButton.Location = new System.Drawing.Point(287, 224);
             this.searchIPButton.Name = "searchIPButton";
             this.searchIPButton.Size = new System.Drawing.Size(106, 41);
             this.searchIPButton.TabIndex = 3;
@@ -86,7 +86,7 @@
             // textBoxLabel
             // 
             this.textBoxLabel.AutoSize = true;
-            this.textBoxLabel.Location = new System.Drawing.Point(391, 152);
+            this.textBoxLabel.Location = new System.Drawing.Point(223, 136);
             this.textBoxLabel.Name = "textBoxLabel";
             this.textBoxLabel.Size = new System.Drawing.Size(116, 25);
             this.textBoxLabel.TabIndex = 5;

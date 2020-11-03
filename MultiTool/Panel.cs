@@ -38,5 +38,13 @@ namespace MultiTool
         {
             System.Diagnostics.Process.Start("powershell.exe");
         }
+
+        private void lookupPhone_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            PhoneLookup phoneLookup = new PhoneLookup();
+            phoneLookup.Show();
+        }
     }
 }

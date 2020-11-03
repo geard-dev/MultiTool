@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhoneLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneLookup.Designer.cs">
+      <DependentUpon>PhoneLookup.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemoryEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PhoneLookup.resx">
+      <DependentUpon>PhoneLookup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IPLookup.resx">
       <DependentUpon>IPLookup.cs</DependentUpon>
     </EmbeddedResource>
